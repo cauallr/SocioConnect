@@ -1,5 +1,3 @@
-// script.js
-
 document.addEventListener("DOMContentLoaded", function () {
     const postButton = document.querySelector(".post-form button");
     const postList = document.querySelector(".post-list");
@@ -14,6 +12,21 @@ document.addEventListener("DOMContentLoaded", function () {
         postElement.innerHTML = `<p>${postContent}</p>`;
         postList.appendChild(postElement);
         textarea.value = ""; // Limpa o campo de texto
+      }
+    });
+  
+    const menuBtn = document.querySelector(".menu-btn");
+    const menuConfig = document.querySelector(".menu-config");
+    const sidebar = document.querySelector(".sidebar");
+  
+    menuConfig.addEventListener("click", function () {
+      sidebar.classList.toggle("sidebar-active");
+    });
+  
+    // Adicione este event listener para fechar a barra ao clicar fora dela
+    document.addEventListener("click", function (event) {
+      if (!sidebar.contains(event.target) && !menuConfig.contains(event.target)) {
+        sidebar.classList.remove("sidebar-active");
       }
     });
   });

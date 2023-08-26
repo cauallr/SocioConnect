@@ -1,68 +1,90 @@
-
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
-  }
-  
-  body {
+}
+
+body {
     font-family: Arial, sans-serif;
-  }
-  
-  header {
+}
+
+header {
     background-color: #002a7e;
     color: rgb(6, 189, 240);
     padding: 10px 0;
     text-align: center;
-  }
-  
-  nav ul {
+    position: relative; /* Adicionado para posicionar de forma relativa */
+}
+
+.menu-btn {
+    position: absolute;
+    top: 10px; /* Distância do topo */
+    left: 10px; /* Distância da esquerda */
+    font-size: 24px;
+    cursor: pointer;
+}
+.menu-config{
+    position: absolute;
+    top: 10px; /* Distância do topo */
+    left: 10px; /* Distância da esquerda */
+    font-size: 24px;
+    cursor: pointer;
+    flex-direction: column;
+}
+.sidebar{
+    position: absolute;
+    flex-direction: column;
+}
+.sidebar-active{
+    flex-direction: column;}
+    
+nav ul {
     list-style: none;
-  }
-  
-  nav ul li {
+}
+
+nav ul li {
     display: inline;
     margin-right: 20px;
-  }
-  
-  nav a {
+}
+
+nav a {
     text-decoration: none;
     color: rgb(255, 255, 255);
-  }
-  
-  main {
+}
+
+main {
     max-width: 800px;
     margin: 20px auto;
     padding: 0 20px;
-  }
-  
-  .post-form textarea {
+}
+
+.post-form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-  }
-  
-  .post-form button {
+}
+
+.post-form button {
     background-color: #333;
     color: white;
     border: none;
     padding: 8px 20px;
     cursor: pointer;
-  }
-  
-  .post-list {
+}
+
+.post-list {
     border-top: 1px solid #ccc;
     margin-top: 20px;
     padding-top: 20px;
-  }
-  
-  footer {
+}
+
+footer {
     text-align: center;
     padding: 10px 0;
     background-color: #f4f4f4;
-  }
-  
-  /* Estilos para as postagens */
+}
+
+/* Estilos para as postagens */
 post {
     color:red;
     background-color: #f4f4f4;
@@ -70,5 +92,41 @@ post {
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
+}
+/* ... estilos anteriores ... */
+
+/* ... estilos anteriores ... */
+
+.sidebar {
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -200px; /* Inicialmente oculto */
+    background-color: #002a7e;
+    color: #fff;
+    transition: left 0.3s ease;
+    display: flex; /* Exibir os itens em coluna */
+    flex-direction: column; /* Colocar os itens em coluna */
+    align-items: flex-start; /* Alinhar os itens à esquerda */
+}
+.menu
+.sidebar-active {
+    left: 0; /* Mostrar o menu ao adicionar essa classe */
+}
+
+.menu {
+    padding-top: 20px;
+    list-style: none; /* Remover marcadores de lista */
+}
+
+.menu li {
+    margin-bottom: 10px; /* Adicionar espaço entre os itens */
+}
+
+
+
+
+  
+  /* ... estilos anteriores ... */
   
