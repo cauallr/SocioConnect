@@ -9,9 +9,11 @@
 <body>
     <div class="login-container">
         <h1>Login</h1>
-        <input type="text" placeholder="Nome">
-        <input type="password" placeholder="Senha">
-        <button>Enviar</button>
+        <form action="ProcessLoginServlet" method="post">
+            <input type="text" name="username" placeholder="Nome">
+            <input type="password" name="password" placeholder="Senha">
+            <button type="submit">Enviar</button>
+        </form>
     </div>
 </body>
 </html>
