@@ -18,13 +18,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   
     menuBtn.addEventListener("click", function () {
-      sidebar.classList.toggle("sidebar-active");
+      sidebar.classList.toggle("sidebar");
     });
   
     // Adicione este event listener para fechar a barra ao clicar fora dela
     document.addEventListener("click", function (event) {
       if (!sidebar.contains(event.target) && !menuBtn.contains(event.target)) {
-        sidebar.classList.remove("sidebar-active");
+        sidebar.classList.remove("sidebar");
       }
     });
   });

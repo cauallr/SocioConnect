@@ -21,7 +21,8 @@ header {
     left: 10px; /* Distância da esquerda */
     font-size: 24px;
     cursor: pointer;
-}.menu-config{
+}
+.menu-config{
     position: absolute;
     top: 10px; /* Distância do topo */
     left: 10px; /* Distância da esquerda */
@@ -33,9 +34,14 @@ header {
     position: absolute;
     flex-direction: column;
 }
-.sidebar-active{
+.sidebar.sidebar-active{
     flex-direction: column;}
     
+
+.menu{
+    padding: 24px;
+    list-style: none;
+}
 nav ul {
     list-style: none;
 }
