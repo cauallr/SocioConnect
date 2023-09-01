@@ -8,38 +8,33 @@
 </head>
 <body>
   <header>
-    <div class="">
-      <div class="menu-btn">☰</div> <!-- Botão de 3 barras -->
-      <h1>Socio Connect</h1>
-      <aside class="sidebar">
-        <ul>
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Chat</a></li>
-          <li><a href="#">Fotos</a></li>
-          <li><a href="#">Favoritos</a></li>
-        </ul>
-      </aside>
-    </div>
-    <nav class="menu">
-      <ul>
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Chat</a></li>
-        <li><a href="#">Fotos</a></li>
-        <li><a href="#">Favoritos</a></li>
-      </ul>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <h1 class="navbar__logo">Socio Connect</h1>
+        <div class="menu-btn" id="menuBtn">☰</div>
+      </div>
     </nav>
+    <aside class="sidebar">
+      <ul class="sidebar__list">
+        <li class="sidebar_item"><a href="#">Início</a></li>
+        <li class="sidebar_item"><a href="#">Chat</a></li>
+        <li class="sidebar_item"><a href="#">Fotos</a></li>
+        <li class="sidebar_item"><a href="#">Favoritos</a></li>
+      </ul>
+    </aside>
+    <p class="texto">Sua soluções sociais.</p>
   </header>
   <main>
     <section class="post-form">
-      <textarea placeholder="Compartilhe algo..."></textarea>
-      <button>Postar</button>
+      <textarea class="post-form__textarea" placeholder="Compartilhe algo..."></textarea>
+      <button class="post-form__button">Postar</button>
     </section>
     <section class="post-list">
-      <p>As postagens aparecerão aqui</p>
+      <p class="post-list__placeholder">As postagens aparecerão aqui</p>
     </section>
   </main>
-  <footer>
-    <p>&copy; 2023 Socio Connect. Todos os direitos reservados.</p>
+  <footer class="footer">
+    <p class="footer__text">&copy; 2023 Socio Connect. Todos os direitos reservados.</p>
   </footer>
   <script src="JavaS.Js"></script>
 </body>

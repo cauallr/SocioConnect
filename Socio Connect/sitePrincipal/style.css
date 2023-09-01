@@ -1,67 +1,87 @@
+/* Reset de margens e preenchimentos para os elementos básicos */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Melhorar o modelo de caixa */
 }
 
 body {
     font-family: Arial, sans-serif;
 }
 
+/* Estilos para o cabeçalho */
 header {
     background-color: #002a7e;
-    color: rgb(6, 189, 240);
+    color: #06bdf0; /* Cor ajustada */
     padding: 10px 0;
     text-align: center;
-    position: relative; /* Adicionado para posicionar de forma relativa */
+    position: relative;
 }
 
+/* Estilos para o botão de menu */
 .menu-btn {
     position: absolute;
-    top: 10px; /* Distância do topo */
-    left: 10px; /* Distância da esquerda */
+    top: 10px;
+    left: 10px;
     font-size: 24px;
     cursor: pointer;
 }
-.menu-config{
+
+/* Estilos para o menu de configurações */
+.menu-config {
     position: absolute;
-    top: 10px; /* Distância do topo */
-    left: 10px; /* Distância da esquerda */
+    top: 10px;
+    right: 10px; /* Posicionado à direita */
     font-size: 24px;
     cursor: pointer;
+    display: flex;
     flex-direction: column;
 }
-.sidebar{
-    position: absolute;
+
+/* Estilos para a barra lateral */
+.sidebar {
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    background-color: #002a7e;
+    color: #fff;
+    transition: left 0.3s ease;
+    display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
-.sidebar.sidebar-active{
-    flex-direction: column;}
-    
 
-.menu{
-    padding: 24px;
+/* Estilos para a barra lateral quando estiver ativa */
+.sidebar-active {
+    left: 0;
+}
+
+/* Estilos para a lista de itens do menu */
+.menu {
+    padding-top: 20px;
     list-style: none;
 }
-nav ul {
-    list-style: none;
+
+.menu li {
+    margin-bottom: 10px;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a {
+/* Estilos para links no menu */
+.menu a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: #fff;
 }
 
+/* Estilos para o conteúdo principal */
 main {
     max-width: 800px;
     margin: 20px auto;
     padding: 0 20px;
 }
 
+/* Estilos para o formulário de postagem */
 .post-form textarea {
     width: 100%;
     padding: 10px;
@@ -76,62 +96,83 @@ main {
     padding: 8px 20px;
     cursor: pointer;
 }
+.texto{
+    color: #f5f5f5;
+    padding: 10px;
+    margin: auto;
 
+}
+
+/* Estilos para a lista de postagens */
 .post-list {
     border-top: 1px solid #ccc;
     margin-top: 20px;
     padding-top: 20px;
 }
 
+/* Estilos para o rodapé */
 footer {
     text-align: center;
     padding: 10px 0;
     background-color: #f4f4f4;
 }
 
-/* Estilos para as postagens */
-post {
-    color:red;
+/* Estilos para as postagens individuais */
+.post {
+    color: red;
     background-color: #f4f4f4;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
+
 }
-/* ... estilos anteriores ... */
+/* ... (seus estilos existentes) ... */
 
-/* ... estilos anteriores ... */
-
+/* Estilos para a barra lateral */
 .sidebar {
-    width: 200px;
+    width: 250px;
     height: 100%;
     position: fixed;
     top: 0;
-    left: -200px; /* Inicialmente oculto */
+    left: -250px;
     background-color: #002a7e;
     color: #fff;
     transition: left 0.3s ease;
-    display: flex; /* Exibir os itens em coluna */
-    flex-direction: column; /* Colocar os itens em coluna */
-    align-items: flex-start; /* Alinhar os itens à esquerda */
-}
-.menu
-.sidebar-active {
-    left: 0; /* Mostrar o menu ao adicionar essa classe */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.menu {
-    padding-top: 20px;
-    list-style: none; /* Remover marcadores de lista */
+/* Estilos para a barra lateral quando estiver ativa */
+.sidebar.sidebar-active {
+    left: 0;
 }
 
-.menu li {
-    margin-bottom: 10px; /* Adicionar espaço entre os itens */
+/* Estilos para a lista de itens da barra lateral */
+.sidebar__list {
+    list-style: none;
+    padding: 20px;
 }
 
+/* Estilos para os itens da barra lateral */
+.sidebar_item {
+    margin-bottom: 15px;
+}
 
+/* Estilos para os links da barra lateral */
+.sidebar_item a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
 
+/* Estilos para o texto acima da barra lateral */
+.texto {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ffffff;
+}
 
-  
-  /* ... estilos anteriores ... */
-  
+/* ... (seus estilos existentes) ... */
