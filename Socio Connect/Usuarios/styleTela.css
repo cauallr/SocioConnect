@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, blue, rgb(25, 126, 157));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Isso garante que a página ocupará a altura total da viewport */
+    margin: 0;
+}
+
+.texto {
+    text-align: center;
+    border-radius: 16px;
+    color: #f5f5f5;
+}
+
+.opção {
+    text-align: center;
+    font-size: 30px;
+    color: #00dce8;
+}
+
+#loginButton,
+#cadastroButton {
+    background-color: aqua;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center; /* Centralizar texto horizontalmente */
+    flex-direction: column;
+}
+
+#loginButton:hover,
+#cadastroButton:hover {
+    background-color: #00dce8; /* Cor de destaque quando hover */
+    transform: scale(1.1);
+}

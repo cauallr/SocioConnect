@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunta</title>
+    <link rel="stylesheet" href="styleTela.css">
+</head>
+<body>
+
+    <div id="Tela">
+        <h1 class="texto">Bem-vindo ao nosso site!</h1>
+        <p class="opção">Selecione uma opção:</p>
+        <button id="loginButton">Já tenho uma conta</button>
+        <button id="cadastroButton">Não tenho uma conta</button>
+    </div>
+
+    <script>
+        document.getElementById("loginButton").addEventListener("click", function() {
+            // Redirecionar para a tela de login
+            window.location.href = "login.html";
+        });
+
+        document.getElementById("cadastroButton").addEventListener("click", function() {
+            // Redirecionar para a tela de cadastro
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+</html>
